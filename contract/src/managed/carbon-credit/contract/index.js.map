@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["src/carbon-credit.compact", "compiler/standard-library.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAgCA;;;;;;;;;;;;;MAQA,AAAA,YAKC;;;;;cAL2B,SAAyB;;;;;;;;;;;yCAAzB,SAAyB;;;;;;;;;8CAAzB,SAAyB;;;OAKpD;MAED,AAAA,YAQC;;;;;;;;;;;;;;;;;;;;;;OAAA;MAED,AAAA,SAEC;;OAAA;;;;;;;;;;GAvBA;EAJD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IARA;;;;;;;;;yEAA2B;IAE3B;;;;;;;;;yEAA+C;IAE/C;;;;;;;;;yEAAgC;IAEhC;;;;;;;;;yEAA+B;IAG7B;;;;;;;;;yEAAK;UACL,KAAO;IAAP;;;;;;;2HAAA,KAAO;;yEAAA;UACP,KAAQ;IAAR;;;;;;;;;;6FAAA,KAAQ;;;;wEAAA;;;;;;;GACT;ECbD,AAAA,QAAuB,0CACkB;EAGzC,AAAA;EA3BA,AAAA,kBAAA;oEAAA;;;EDsCA,AAAA,iBAAoC;;0DAApC,cAAoC;;;;;;;;;;;;;;GAAA;EAEpC,AAAA,eAKC,4BAL2B,SAAyB;oDAC5C;;;;;;;;;;;yHAAK;;;;UACZ,KAAK;;;iGAAwC;;;;;;;;;;;sKAAQ;;IAArD;;;;;;;2HAAA,KAAK;;yEAAA;UACL,KAAO,gBAAmC,SAAO;IAAjD;;;;;;;2HAAA,KAAO;;yEAAA;IACP;;;;;;;;;yEAAK;;GACN;EAED,AAAA,eAQC;oDAPQ;;;;;;;;;;;yHAAK;;;;kEACL;;;;;;;;;;;uIAAK;;;;yHAAgC;;;;;;;;;;;8LAAQ;;;UAC9C,WAAyB,2BAAb;;;;;;;;;;;qHAAO;IACzB;;;;;;;;;yEAAK;UACL,KAAQ;IAAR;;;;;;;;;;6FAAA,KAAQ;;;;wEAAA;UACR,KAAO;IAAP;;;;;;;2HAAA,KAAO;;yEAAA;WACA,WAAS;GACjB;EAED,AAAA,YAEC,CAFwB,IAAa,EAAE,UAAmB;;mCACkB,UAAQ;mCAAE,IAAE;GACxF;;;;;;;;;;;;;;;;;;;;IAnCD;qCAAA;;;;;;;;;;;0GAA2B;KAAA;IAE3B;qCAAA;;;;;;;;;;;0GAA+C;KAAA;IAE/C;qCAAA;;;;;;;;;;;0GAAgC;KAAA;IAEhC;qCAAA;;;;;;;;;;;0GAA+B;KAAA;;;;;;;;EA2B/B,AAAA,SAEC;;;;UAFwB,IAAa;UAAE,UAAmB;;;;;;;;;;;;;;;uCAAlC,IAAa,EAAE,UAAmB;GAE1D;;;;"
+}
