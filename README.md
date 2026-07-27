@@ -1,4 +1,4 @@
-# 🌿 Carbon Credit Tracker
+# 🌿 Owner avatar co2 tracker
 
 > A privacy-preserving, decentralized carbon credit management dApp built on the **Midnight Network** using **Zero-Knowledge (ZK) proofs**. Record and retire carbon credits with full privacy — only you can prove ownership, without ever revealing your private key.
 
@@ -13,7 +13,7 @@
 | Network | Contract Address |
 |---------|-----------------|
 | Preprod | `Pending` |
-| Standalone (Local) | `62d4828f79c82b63c9a329a6c706c9ee2297a977226d1ba20ba174ba22fc3497` |
+| Standalone (Local) | `Pending` |
 
 > **Live Vercel Deployment:** _[Add after Vercel deploy]_
 
@@ -21,14 +21,15 @@
 
 ## ✨ Features
 
-- 🔒 **Privacy-first credit recording** — Post carbon credits using ZK proofs; your secret key is never revealed on-chain
-- 🌱 **Record Carbon Credits** — Attach a description to a credit (e.g., "Solar farm — 500 tonnes CO₂ offset")
-- ♻️ **Retire Carbon Credits** — Only the original owner (proven via ZK) can retire a credit
-- 👁️ **Public ledger transparency** — Credit state (occupied/vacant) and description are publicly visible
-- 🔑 **Private ownership** — Owner identity is proven without revealing the private key
-- 🌐 **Full-stack dApp** — React UI + CLI + TypeScript API + Compact smart contract
-- 🦺 **Wallet integration** — Works with 1AM Wallet browser extension
-- ⚡ **Standalone mode** — Run locally with Docker, no testnet required
+- 🔒 **Privacy-first credit recording** — Post carbon credits using ZK proofs; your secret key is never revealed on-chain.
+- 🌱 **Record Carbon Credits** — Attach a description to a credit (e.g., "Solar farm — 500 tonnes CO₂ offset").
+- ♻️ **Retire Carbon Credits** — Only the original owner (proven via ZK) can retire a credit.
+- 👁️ **Public ledger transparency** — Credit state (occupied/vacant) and description are publicly visible.
+- 🔑 **Private ownership** — Owner identity is proven without revealing the private key.
+- 🖼️ **Owner Avatar & Identity Visualizer** — Shows dynamic lock/unlock state avatars depending on ownership.
+- 🌐 **Full-stack dApp** — React UI + CLI + TypeScript API + Compact smart contract.
+- 🦺 **Wallet integration** — Works with 1AM Wallet browser extension.
+- ⚡ **Standalone mode** — Run locally with Docker, no testnet required.
 
 ---
 
@@ -162,7 +163,7 @@ npm run standalone
 ```bash
 npm run standalone
 # Select option 2 — "Join an existing carbon credit tracker contract"
-# Enter: 62d4828f79c82b63c9a329a6c706c9ee2297a977226d1ba20ba174ba22fc3497
+# Enter the deployed contract address
 ```
 
 ---
