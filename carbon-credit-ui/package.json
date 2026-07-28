@@ -34,7 +34,7 @@
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
-    "@swc/core": "^1.15.41",
+    "@swc/core": "^1.15.46",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.1.2",
     "@types/react": "^19.2.14",
