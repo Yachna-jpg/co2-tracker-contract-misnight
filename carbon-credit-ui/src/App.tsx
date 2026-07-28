@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MainLayout from './components/layout/MainLayout';
+import MainLayout from './components/Layout/MainLayout';
 import { DeployedBoardProvider } from './contexts';
 import { logger } from './main';
 import Dashboard from './features/dashboard/Dashboard';
