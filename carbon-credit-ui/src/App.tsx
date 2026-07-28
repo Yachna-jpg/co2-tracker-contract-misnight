@@ -1,59 +1,26 @@
-// This file is part of midnightntwrk/example-carbon-credit.
-// Copyright (C) Midnight Foundation
-// SPDX-License-Identifier: Apache-2.0
-// Licensed under the Apache License, Version 2.0 (the "License");
-// You may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MainLayout from './components/layout/MainLayout';
+import { DeployedBoardProvider } from './contexts';
+import { logger } from './main';
+import Dashboard from './features/dashboard/Dashboard';
+import Marketplace from './features/marketplace/Marketplace';
+import Certificates from './features/certificates/Certificates';
+import Analytics from './features/analytics/Analytics';
 
-import React, { useEffect, useState } from 'react';
-import { Box } from '@mui/material';
-import { MainLayout, Board } from './components';
-import { useDeployedBoardContext } from './hooks';
-import { type BoardDeployment } from './contexts';
-import { type Observable } from 'rxjs';
-
-/**
- * The root carbon credit tracker application component.
- *
- * @remarks
- * The {@link App} component requires a `<DeployedBoardProvider />` parent in order to retrieve
- * information about current carbon credit tracker deployments.
- *
- * @internal
- */
 const App: React.FC = () => {
-  const boardApiProvider = useDeployedBoardContext();
-  const [boardDeployments, setBoardDeployments] = useState<Array<Observable<BoardDeployment>>>([]);
-
-  useEffect(() => {
-    const subscription = boardApiProvider.boardDeployments$.subscribe(setBoardDeployments);
-
-    return () => {
-      subscription.unsubscribe();
-    };
-  }, [boardApiProvider]);
-
   return (
-    <Box sx={{ background: '#000', minHeight: '100vh' }}>
+    <BrowserRouter>
       <MainLayout>
-        {boardDeployments.map((boardDeployment, idx) => (
-          <div data-testid={`board-${idx}`} key={`board-${idx}`}>
-            <Board boardDeployment$={boardDeployment} />
-          </div>
-        ))}
-        <div data-testid="board-start">
-          <Board />
-        </div>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/certificates" element={<Certificates />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/projects" element={<div className="p-8">Projects Page (Coming Soon)</div>} />
+        </Routes>
       </MainLayout>
-    </Box>
+    </BrowserRouter>
   );
 };
 
